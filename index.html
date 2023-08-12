@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+  <div class="container">
+    
+   <div id="popup">
+    <div>
+        <span>&#9932</span>
+        <p>Confirmation successfuly completed!</p>
+    </div>
+   </div>
+
+    <div id="frame">
+        <div id="sidebar">
+            <ul id="steps">
+                <li>
+                    <span class="active">1</span>
+                    <span class="active">Staff</span>
+                </li>
+                <li>
+                    <span> 2</span>
+                    <span>Services</span>
+                </li>
+                <li>
+                    <span>3</span>
+                    <span>Date&Time</span>
+                </li>
+                <li>
+                    <span>4</span>
+                    <span>Confirmation</span>
+                </li>
+            </ul>
+        </div>
+        
+        <form id="form" action="">
+            <div id="header">
+                header
+                        </div>
+        <div id="staff" class="first current active">
+
+        </div>
+
+        <div id="services" class="default">
+           
+        </div>
+        <div id="date-time" class="default">
+<input  type="date" name="" id="date" >
+<div id="time"></div>
+        </div>
+
+        <div id="confirmation" class="default last">
+<div>
+    <label for="customer-name"> First Name</label>
+
+<input id="customer-name" type="text">
+</div>
+<div>
+    <label for="customer-surname"> Last Name</label>
+
+<input id="customer-surname" type="text">
+</div>
+<div>
+    <label for="customer-email">E-mail</label>
+
+<input id="customer-email" type="email">
+</div>
+<div>
+    <label for="customer-phone">Phone </label>
+
+<input id="customer-phone"  type="number">
+</div>
+
+<div id="selected-data">
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+</div>
+        </div>
+
+
+        <div id="footer">
+            <button id="back" class=" button">Back</button>
+        <button id="next" class="button">Next</button>
+        <input id="confirm" class="button" type="submit" value="Confirm">
+        <p id="alert" class="">alert</p>
+        </div>
+    </form>
+            </div>
+
+
+  
+  </div>
+    
+
+    <script src=""></script>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>

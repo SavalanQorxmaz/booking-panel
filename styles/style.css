@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 0px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 800px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 60%;
+    margin: auto;
+  }
+}
+.hidden {
+  display: none;
+}
+
+.button {
+  padding: 8px;
+  background-color: #6C70DC;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.selected {
+  color: yellow;
+  background-color: gray;
+}
+
+#frame {
+  display: flex;
+  position: relative;
+  top: 10vh;
+  width: 100%;
+  height: 80vh;
+}
+#frame #sidebar {
+  width: 20%;
+  height: 100%;
+  background-color: rgb(41, 45, 50);
+}
+#frame #sidebar #steps {
+  margin-top: 10%;
+}
+#frame #sidebar #steps > * {
+  display: flex;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+#frame #sidebar #steps > * > *:first-child {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: rgb(70, 68, 68);
+}
+#frame #sidebar #steps > * > *:first-child.active {
+  background-color: #53D56C;
+}
+#frame #sidebar #steps > * > *:nth-child(2) {
+  display: flex;
+  align-items: center;
+  color: rgb(71, 70, 70);
+}
+@media screen and (max-width: 730px) {
+  #frame #sidebar {
+    width: -moz-min-content;
+    width: min-content;
+  }
+  #frame #sidebar #steps > * {
+    justify-content: center;
+  }
+  #frame #sidebar #steps > * > *:last-child {
+    display: none;
+  }
+}
+#frame #form {
+  position: relative;
+  width: 100%;
+  background-color: #F5F7FA;
+}
+#frame #form > * {
+  position: absolute;
+}
+#frame #form #header {
+  width: 100%;
+  height: 10%;
+  left: 0;
+  top: 0;
+  border-bottom: 1px solid rgba(32, 29, 29, 0.133);
+  padding: 5px;
+}
+#frame #form #staff, #frame #form #services, #frame #form #date-time, #frame #form #confirmation {
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  padding: 10px;
+  padding-bottom: 20%;
+  overflow-y: auto;
+}
+#frame #form #date-time {
+  flex-direction: row;
+}
+#frame #form #confirmation {
+  display: flex;
+  justify-content: center;
+}
+#frame #form #confirmation > *:not(:last-child) {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-bottom: 5px;
+}
+#frame #form #confirmation > *:last-child {
+  border: 1px solid rgba(0, 0, 0, 0.444);
+  margin-top: 20px;
+}
+#frame #form #confirmation > *:last-child > * {
+  margin-bottom: 5px;
+  padding: 5px;
+}
+@media screen and (max-width: 800px) {
+  #frame #form #confirmation > *:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+}
+#frame #form #footer {
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  left: 0;
+  border: 1px solid rgba(0, 0, 0, 0.144);
+}
+#frame #form #footer > * {
+  position: absolute;
+}
+#frame #form #footer #back {
+  bottom: 20px;
+  left: 20px;
+  display: none;
+}
+#frame #form #footer #next {
+  bottom: 20px;
+  right: 20px;
+}
+#frame #form #footer #confirm {
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+#frame #form #footer #alert {
+  bottom: 20px;
+  left: 20%;
+  display: none;
+}
+
+#popup {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.345);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+#popup > div {
+  width: 300px;
+  height: 100px;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#popup > div > span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
